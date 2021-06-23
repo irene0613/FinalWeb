@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background-image: url('images/7a30b1d095fa760bcc2dd11079e6b128.jpg');
+    background-repeat: no-repeat;
+    background-size: 1400px 2800px;
 }
 
 canvas {
