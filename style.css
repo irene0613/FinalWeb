@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(239, 228, 250);
+    background-image: url('img/18.png');
+    background-repeat: no-repeat;
+    background-size: 350px 640px;
+    background-position: center;
+}
+
+.radius {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.me {
+    border-radius: 20px;
+}

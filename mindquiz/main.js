@@ -8,6 +8,7 @@ $(function() {
             currentQuiz = 0;
             //顯示題目
             $("#question").text(questions[0].question);
+            document.getElementById("myImage").src = "mindquiz/05.jpg";
             //將選項區清空(可以試著先不寫)
             $("#options").empty();
             //將選項逐個加入
@@ -27,6 +28,7 @@ $(function() {
                         var finalResult = questions[currentQuiz].answers[i][1];
                         //顯示最終結果的標題
                         $("#question").text(finalAnswers[finalResult][0]);
+                        document.getElementById("myImage").src = finalAnswer[finalResult];
                         //將選項區域清空
                         $("#options").empty();
                         //顯示最終結果內容

@@ -1,5 +1,7 @@
 let mapArray, ctx, currentImgMain;
 let imgMountain, imgMain, imgEnemy;
+var audio = document.getElementById("bgMusic");
+audio.src = "simpleRPG/walk.mp3";
 //mapArray - 決定地圖中每個格子的元素
 //ctx - HTML5 Canvas用
 //currentImgMainX, currentImgMainY - 決定主角所在座標
@@ -43,6 +45,7 @@ $(function() {
 });
 //處理使用者按下按鍵
 $(document).on("keydown", function(event) {
+    audio.play();
     let targetImg, targetBlock, cutImagePositionX;
     //cutImagePositionX - 決定主角臉朝向哪個方向
     targetImg = { //主角的目標座標
