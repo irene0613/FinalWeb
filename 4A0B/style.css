@@ -1,0 +1,36 @@
+    body {
+        background-image: url('01.jpg');
+        background-repeat: no-repeat;
+        background-position: -775px -670px;
+        background-size: 2500px 4000px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #myTable {
+        margin: 40px 505px;
+    }
+    
+    #myImage {
+        margin: 40px 255px;
+    }
+    
+    #timer {
+        width: 100px;
+        height: 50px;
+        margin: 40px 510px;
+        text-align: center;
+        padding-top: 8px;
+        color: white;
+        font-size: 25px;
+        background-color: darkslateblue;
+    }
+    
+    #hint {
+        text-align: center;
+        /* margin: 40px 470px; */
+        color: red;
+        height: 20px;
+    }
