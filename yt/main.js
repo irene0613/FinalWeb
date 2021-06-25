@@ -65,7 +65,8 @@ function onPlayerStateChange(event) {
     } else if (choose == 2) {
         if (Math.floor(player1.getCurrentTime()) == playTime1[currentPlay][1]) {
             if (currentPlay < 4) {
-                currentPlay = 2;
+                if (currentPlay == 0)
+                    currentPlay = 2;
                 currentPlay++;
                 player1.loadVideoById({
                     videoId: playList1[currentPlay],
@@ -87,7 +88,8 @@ function onPlayerStateChange(event) {
     } else if (choose == 3) {
         if (Math.floor(player1.getCurrentTime()) == playTime1[currentPlay][1]) {
             if (currentPlay < playList1.length - 1) {
-                currentPlay = 4;
+                if (currentPlay == 0)
+                    currentPlay = 4;
                 currentPlay++;
                 player1.loadVideoById({
                     videoId: playList1[currentPlay],
